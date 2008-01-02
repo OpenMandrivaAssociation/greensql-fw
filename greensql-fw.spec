@@ -16,6 +16,7 @@ Requires(preun): rpm-helper
 BuildRequires:	libevent-devel
 BuildRequires:	mysql-devel
 BuildRequires:	pcre-devel
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 GreenSQL is a database firewall engine used to protect Open Source Databases
