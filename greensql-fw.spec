@@ -1,7 +1,7 @@
 Summary:	Database Firewall
 Name:		greensql-fw
-Version:	0.6.8
-Release:	%mkrel 2
+Version:	0.8.2
+Release:	%mkrel 1
 License:	GPL
 Group:		System/Servers
 URL:		http://sourceforge.net/projects/greensql/
@@ -10,12 +10,12 @@ Source1:	%{name}.init
 Source2:	%{name}.sysconfig
 Source3:	%{name}.logrotate
 Patch0:		greensql-fw-logdir.diff
-Patch1:		greensql-fw-bug1821545.diff
 Requires(post): rpm-helper
 Requires(preun): rpm-helper
 BuildRequires:	libevent-devel
 BuildRequires:	mysql-devel
 BuildRequires:	pcre-devel
+BuildRequires:	flex
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
@@ -28,7 +28,6 @@ sensitive commands.
 
 %setup -q -n %{name}-%{version}
 %patch0 -p1
-%patch1 -p1
 
 cp %{SOURCE1} %{name}.init
 cp %{SOURCE2} %{name}.sysconfig
@@ -87,4 +86,3 @@ rm -rf %{buildroot}
 %{_initrddir}/%{name}
 %{_sbindir}/%{name}
 %dir /var/log/greensql
-
