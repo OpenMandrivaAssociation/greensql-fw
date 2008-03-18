@@ -16,6 +16,7 @@ BuildRequires:	libevent-devel
 BuildRequires:	mysql-devel
 BuildRequires:	pcre-devel
 BuildRequires:	flex
+BuildRequires:	bison
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
