@@ -1,6 +1,6 @@
 Summary:	Database Firewall
 Name:		greensql-fw
-Version:	0.9.2
+Version:	0.9.4
 Release:	%mkrel 1
 License:	GPL
 Group:		System/Servers
@@ -10,7 +10,6 @@ Source1:	%{name}.init
 Source2:	%{name}.sysconfig
 Source3:	%{name}.logrotate
 Patch0:		greensql-fw-logdir.diff
-Patch1:		greensql-fw-0.8.4-gcc43.diff
 Requires(post): rpm-helper
 Requires(preun): rpm-helper
 BuildRequires:	libevent-devel
@@ -30,7 +29,6 @@ sensitive commands.
 
 %setup -q -n %{name}-%{version}
 %patch0 -p1
-%patch1 -p1
 
 cp %{SOURCE1} %{name}.init
 cp %{SOURCE2} %{name}.sysconfig
