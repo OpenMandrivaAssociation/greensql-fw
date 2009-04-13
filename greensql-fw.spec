@@ -1,7 +1,7 @@
 Summary:	Database Firewall
 Name:		greensql-fw
-Version:	0.9.6
-Release:	%mkrel 2
+Version:	1.0.0
+Release:	%mkrel 1
 License:	GPL
 Group:		System/Servers
 URL:		http://sourceforge.net/projects/greensql/
@@ -71,7 +71,7 @@ install -m0644 %{name}.logrotate %{buildroot}%{_sysconfdir}/logrotate.d/%{name}
 %postun
 if [ "$1" -ge "1" ]; then
     %{_initrddir}/%{name} condrestart > /dev/null 2>&1 ||:
-fi	
+fi
 
 %clean
 rm -rf %{buildroot}
