@@ -1,7 +1,7 @@
 Summary:	Database Firewall
 Name:		greensql-fw
 Version:	1.0.0
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	GPL
 Group:		System/Servers
 URL:		http://sourceforge.net/projects/greensql/
