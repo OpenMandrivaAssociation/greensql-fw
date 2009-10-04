@@ -10,6 +10,7 @@ Source1:	%{name}.init
 Source2:	%{name}.sysconfig
 Source3:	%{name}.logrotate
 Patch0:		greensql-fw-logdir.diff
+Patch1:		greensql-fw-1.0.0-gcc43.diff
 Requires(post): rpm-helper
 Requires(preun): rpm-helper
 BuildRequires:	libevent-devel
@@ -29,6 +30,7 @@ sensitive commands.
 
 %setup -q -n %{name}-%{version}
 %patch0 -p1
+%patch1 -p1
 
 cp %{SOURCE1} %{name}.init
 cp %{SOURCE2} %{name}.sysconfig
