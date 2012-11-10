@@ -1,0 +1,5 @@
+sources:
+  "greensql-fw-1.3.0.tar.gz:"	f2451a397eb73cc01c40e15cc90dc4374775e63a
+  "greensql-fw.init:"	24f261efb449a9bcb330f1887ad3d1a42d146b25
+  "greensql-fw.logrotate:"	7f61d532f00bd880d80e5ebb1fc23194251d9a99
+  "greensql-fw.sysconfig:"	b4afe65d629101d6e19d775d5de31b98ebc06314
