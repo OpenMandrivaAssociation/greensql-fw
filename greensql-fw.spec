@@ -6,7 +6,7 @@ Version:	1.3.0
 Release:	%mkrel 6
 License:	GPL
 Group:		System/Servers
-URL:		http://www.greensql.net/
+URL:		https://www.greensql.net/
 #Source0:	http://www.greensql.net/download/get?os=Source_Code&platform=Any&filename=greensql-fw-%{version}.tar.gz
 Source0:	greensql-fw-%{version}.tar.gz
 Source1:	%{name}.init
