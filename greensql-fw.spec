@@ -16,6 +16,7 @@ Patch0:		greensql-fw-logdir.diff
 Patch1:		greensql-console-mdv_conf.diff
 Requires(post): rpm-helper
 Requires(preun): rpm-helper
+BuildRequires:	make
 BuildRequires:	libevent-devel
 BuildRequires:	mysql-devel
 BuildRequires:	pcre-devel
